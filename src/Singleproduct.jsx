@@ -49,8 +49,9 @@ const Singleproduct = () => {
             (
                  <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6 mt-8">
                 <h2 className="text-xl font-semibold mb-4">{product?.name}</h2>
-                <p className="text-gray-700 mb-4">{product?.capacity || product?.Capacity}</p>
+                <p className="text-gray-700 mb-4">{product?.data?.capacity_GB || product?.data?.capacity}</p>
                 <p className="text-lg font-bold text-green-600">{product?.price}</p>
+                 <p className="text-lg font-bold text-green-600">{product?.data?.color}</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
                 Add to Cart
                 </button>

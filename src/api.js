@@ -70,6 +70,7 @@ export const deleteItem = async (id)=>{
             },
         });
         console.log(res,'response from delete item');
+        console.log(id,'id from delete item');
         
         if (res.status === 200){
             const data = await res.json();
